@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'San Marino Beach';
+    font-style: normal;
+    font-weight: 400;
+    src: local('San Marino Beach'), url('https://fonts.cdnfonts.com/s/30103/San Marino Beach.woff') format('woff');
+}
+
+body {
+    background-color: transparent !important;
+}
+
+.footer {
+    bottom: 10px;
+}
+
+#pos {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    max-height: 720px;
+    overflow: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    opacity: 1;
+    background-color: #111111;
+    color:white;
+    z-index:500;
+    padding: 2vh;
+    border: 1vh solid #3D426B;
+    border-radius: 2vh;
+}
+
+#pos::-webkit-scrollbar {
+    display: none;
+}
+
+#productSection {
+    color: #fff;
+    position: relative;
+}
+
+#products {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+#products::-webkit-scrollbar {
+    display: none;
+}
+
+#orders {
+    max-height: 500px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+#orders::-webkit-scrollbar {
+    display: none;
+}
+
+#cart {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+#cart::-webkit-scrollbar {
+    display: none;
+}
+
+#totalSection {
+    border-top: 3px solid white;
+    padding-top: 30px;
+    color: #fff;
+    position: relative;
+}
+
+#selectedTransaction {
+    margin-top: 3vh;
+    padding: 3vh;
+    background-color: #3D426B;
+    border-radius: 2vh;
+    border: 3px solid white;
+}
+
+.product {
+    display: grid;
+    gap: 1px;
+    text-align: center;
+}
+
+.cart-item {
+    border-left: 2px white solid;
+}
+
+img {
+    transition: transform 0.7s ease-in-out;
+}
+img:hover {
+    transform: rotate(-45deg);
+    cursor:grab;
+}
+
+.quantity {
+    font-size: 1.25vh;
+}
+
+#managementDashboard {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    max-height: 900px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    opacity: 1;
+    background-color: #111111;
+    color:white;
+    z-index:500;
+    padding: 2vh;
+    border: 1vh solid #3D426B;
+    border-radius: 2vh;
+    overflow: auto;
+}
+
+#managementDashboard::-webkit-scrollbar {
+    display: none;
+}
+
+#optionsMenu {
+    position: relative;
+    max-height: 900px;
+    overflow-y: scroll;
+}
+
+#optionsMenu::-webkit-scrollbar {
+    display: none;
+}
+
+#mainMenuOptions {
+    display: none;
+}
+
+#chartMenuOptions {
+    display: none;
+}
+
+#infoContainer {
+    max-height: 900px;
+    overflow-y: scroll;
+}
+
+#infoContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.dataTables_length {
+    display: none;
+}
+
+.menuoption {
+    font-family: 'San Marino Beach', sans-serif;
+    padding-top: 3vh;
+    cursor: pointer;
+}
+
+.menuoption:hover {
+    color: #94FFB9;
+}
+
+#dashboardtitle {
+    font-family: 'San Marino Beach', sans-serif;
+    text-align: center;
+}
+
+#unavailable {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    opacity: 0;
+    background-color: #dc3545;
+    color:white;
+    z-index:500;
+}
+
+.catActive {
+    color: #94FFB9;
+}
+
+.chart-button {
+    font-family: 'San Marino Beach', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.sub-chart-button {
+    font-family: 'San Marino Beach', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.vertical {
+    padding-top: 35px;
+}
